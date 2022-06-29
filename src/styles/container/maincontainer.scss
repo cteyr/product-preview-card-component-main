@@ -84,6 +84,10 @@
         height: 85%;
         width: 80%;
 
+        @media screen and (max-width: 860px) {
+          height: 80%;
+        }
+
         .tittle {
           width: 100%;
 
@@ -115,6 +119,10 @@
         }
         .text {
           width: 100%;
+
+          @media screen and (max-width: 860px) {
+            margin-bottom: 1rem;
+          }
 
           P {
             font-family: "Montserrat", sans-serif;
@@ -162,6 +170,10 @@
           background-color: hsl(158, 36%, 37%);
           color: white;
           border-radius: 5px;
+
+          @media screen and (max-width: 860px) {
+            height: 3rem;
+          }
 
           &:hover {
             cursor: pointer;
