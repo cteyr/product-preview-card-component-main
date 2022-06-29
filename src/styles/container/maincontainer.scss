@@ -10,27 +10,60 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 600px;
+    max-width: 825px;
     height: 60vh;
     width: 38vw;
     border-radius: 10px;
 
     @media screen and (max-width: 860px) {
       flex-direction: column;
+      height: 88vh;
       width: 90vw;
+      min-width: 88%;
+      max-width: 88%;
     }
 
-    .left-container,
+    .left-container {
+      display: flex;
+      flex: 1;
+      height: 100%;
+
+      @media screen and (max-width: 860px) {
+        flex: 37%;
+      }
+    }
     .right-container {
+      display: flex;
       flex: 1;
       height: 100%;
       display: flex;
+
+      @media screen and (max-width: 860px) {
+        flex: 63%;
+      }
     }
+
     .left-container {
+      display: flex;
       border-radius: 10px 0px 0px 10px;
+      @media screen and (max-width: 860px) {
+        border-radius: 10px 10px 0px 0px;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+      }
 
       img {
         border-radius: 10px 0px 0px 10px;
         width: 100%;
+
+        @media screen and (max-width: 860px) {
+          border-radius: 10px 10px 0px 0px;
+          width: 100%;
+          position: absolute;
+          transform: translateY(-7.3rem);
+        }
       }
     }
     .right-container {
@@ -38,6 +71,9 @@
       justify-content: center;
       border-radius: 0 10px 10px 0px;
       background-color: hsl(0, 0%, 100%);
+      @media screen and (max-width: 860px) {
+        border-radius: 0 0px 10px 10px;
+      }
 
       .inter-right-container {
         display: flex;
@@ -56,6 +92,10 @@
             letter-spacing: 0.2rem;
             font-size: 12px;
             color: hsl(208, 7%, 50%);
+
+            @media screen and (max-width: 860px) {
+              font-size: 0.9rem;
+            }
           }
         }
         .sub-tittle {
@@ -67,6 +107,10 @@
             font-size: 1.6rem;
             font-weight: bolder;
             line-height: 1.8rem;
+
+            @media screen and (max-width: 860px) {
+              font-size: calc(0.4rem + 2vh + 2vw);
+            }
           }
         }
         .text {
@@ -78,6 +122,10 @@
             font-weight: 700;
             color: hsl(208, 7%, 50%);
             line-height: 1.2rem;
+
+            @media screen and (max-width: 860px) {
+              font-size: calc(0.33rem + 1vh + 1vw);
+            }
           }
         }
         .price {
