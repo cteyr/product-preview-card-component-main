@@ -1,7 +1,7 @@
 // @ts-ignore
 import image from "../assets/images/image-product-desktop.jpg";
-// @ts-ignore
-import marketCarIcon from "../assets/images/icon-cart.svg";
+
+import { Button } from "../components/Button";
 
 const MainContainer = () => {
   return (
@@ -32,10 +32,8 @@ const MainContainer = () => {
                 <h5>$169.99</h5>
               </div>
             </div>
-            <button type="button">
-              <img className="cover" src={marketCarIcon} alt="" />
-              Add to Cart
-            </button>
+
+            <Button classNames="cover" />
           </div>
         </div>
       </div>
