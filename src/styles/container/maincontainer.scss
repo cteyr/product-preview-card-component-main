@@ -126,13 +126,14 @@
 
           P {
             font-family: "Montserrat", sans-serif;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             font-weight: 700;
             color: hsl(208, 7%, 50%);
-            line-height: 1.3rem;
+            line-height: 1.2rem;
 
             @media screen and (max-width: 860px) {
-              font-size: calc(0.25rem + 0.7vh + 0.7vw);
+              font-size: calc(0.28rem + 0.7vh + 0.7vw);
+              line-height: 1.3rem;
             }
           }
         }
