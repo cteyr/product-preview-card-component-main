@@ -28,7 +28,11 @@
       height: 100%;
 
       @media screen and (max-width: 860px) {
-        flex: 38%;
+        flex: 40%;
+
+        img{
+          margin-top: 0.3rem;
+        }
       }
     }
     .right-container {
