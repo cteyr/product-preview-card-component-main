@@ -21,7 +21,7 @@ const MainContainer = () => {
             <div className="text">
               <p>
                 A floral, solar and voluptuos interpretation composed by Olivier
-                Polge, Perfumer-Creator for the House of CHANEL
+                Polge, Perfumer-Creator for the House of CHANEL.
               </p>
             </div>
             <div className="price">
