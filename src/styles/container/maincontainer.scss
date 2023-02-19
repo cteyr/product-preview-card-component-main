@@ -18,8 +18,9 @@
       flex-direction: column;
       height: 88vh;
       width: 90vw;
-      min-width: 88%;
       max-width: 88%;
+      max-height: 650px;
+      min-width: 320px;
     }
 
     .left-container {
@@ -64,7 +65,7 @@
           border-radius: 10px 10px 0px 0px;
           width: 100%;
           position: absolute;
-          transform: translateY(-7.3rem);
+          transform: translateY(-7.4rem);
         }
       }
     }
@@ -73,8 +74,10 @@
       justify-content: center;
       border-radius: 0 10px 10px 0px;
       background-color: hsl(0, 0%, 100%);
+
       @media screen and (max-width: 860px) {
         border-radius: 0 0px 10px 10px;
+        width: 100%;
       }
 
       .inter-right-container {
@@ -113,8 +116,6 @@
             font-size: 1.8rem;
             font-weight: bolder;
             line-height: 1.8rem;
-            margin-top: -0.5rem;
-            margin-bottom: 0.5rem;
             padding-right: 2rem;
 
             @media screen and (max-width: 860px) {
@@ -126,17 +127,12 @@
         .text {
           width: 100%;
 
-          @media screen and (max-width: 860px) {
-            margin-bottom: 1rem;
-          }
-
           P {
             font-family: "Montserrat", sans-serif;
             font-size: 0.9rem;
             font-weight: 700;
             color: hsl(208, 7%, 50%);
             line-height: 1.3rem;
-            margin-top: -0.8rem;
 
             @media screen and (max-width: 860px) {
               font-size: 0.78rem;
